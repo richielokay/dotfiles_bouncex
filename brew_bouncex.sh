@@ -25,7 +25,10 @@ brew install php54-curl
 brew install php54-imagick
 
 brew install curl
-brew install mysql51
+
+#Install Bouncex version of MYSQL
+brew tap homebrew/versions
+brew install homebrew/versions/mysql51
 
 # Install native apps
 brew tap phinze/homebrew-cask
@@ -46,6 +49,8 @@ installcask sequel-pro
 installcask sublime-text
 installcask the-unarchiver
 installcask transmission
+installcask chrome
+installcask firefox
 
 # Remove outdated versions from the cellar
 brew cleanup
